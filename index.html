@@ -33,7 +33,7 @@ li a:hover {
     background-color: #111;
 }
 body{
-	background-color: #7289DA
+	background-color: black;
 }
 p{
 	color: white;
@@ -47,6 +47,33 @@ ul {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+}
+.st {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  border: solid #1f628d 12px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
 }
 </style>
 </head>
@@ -62,8 +89,8 @@ ul {
 <center>
 	<h1 style="color:white;">DiscordSr</h1>
 	<p>The Server Advertising Hub</p>
-	<button onclick="window.open('https://discord.gg/wThXzsH')">Discord</button>
-	<button onclick="window.open('https://discordapp.com/oauth2/authorize?client_id=447350763363237888&scope=bot&permissions=-1')">Invite</button>
+	<button class="btn" onclick="window.open('https://discord.gg/wThXzsH')">Discord</button>
+	<button class="btn" onclick="window.open('https://discordapp.com/oauth2/authorize?client_id=447350763363237888&scope=bot&permissions=-1')">Invite</button>
 </center>
 <hr>
 <hr>
@@ -89,6 +116,8 @@ ul {
     <div class="w3-container">
       <p>When you bump your server, info about your server gets stored in our Database!</p>
       <p>So you can get your servers information from another server!</p>
+      <hr>
+      <p>Use "!sr servers" to see how many servers are in our database</p>
     </div>
 
     <footer class="w3-container w3-blue">
@@ -114,6 +143,8 @@ ul {
 
 <hr>
 <center>
+	<ul class="st">
 	<p>(c) Artucuno 2018</p>
+	</ul>
 </body>
 </html>

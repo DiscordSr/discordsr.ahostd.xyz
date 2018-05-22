@@ -33,7 +33,7 @@ li a:hover {
     background-color: #111;
 }
 body{
-	background-color: #7289DA
+	background-color: black;
 }
 p{
 	color: white;
@@ -48,6 +48,23 @@ ul {
     position: sticky;
     top: 0;
 }
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  border: solid #1f628d 12px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -55,15 +72,15 @@ ul {
 <ul>
   <li><a><i class="fab fa-discord"></i> DiscordSr</a></li>
   <li><a href="https://discordsr.github.io">Home</a></li>
-  <li><a href="news/">News</a></li>
+  <li><a href="#">News</a></li>
   <li style="float:right;"><a href="https://github.com/DiscordSr">Github</a></li>
   <li style="float:right;"><a href="https://discord.gg/wThXzsH">Discord</a></li>
 </ul>
 <center>
 	<h1 style="color:white;">DiscordSr</h1>
 	<p>The Server Advertising Hub</p>
-	<button onclick="window.open('https://discord.gg/wThXzsH')">Discord</button>
-	<button onclick="window.open('https://discordapp.com/oauth2/authorize?client_id=447350763363237888&scope=bot&permissions=-1')">Invite</button>
+	<button class="btn" onclick="window.open('https://discord.gg/wThXzsH')">Discord</button>
+	<button class="btn" onclick="window.open('https://discordapp.com/oauth2/authorize?client_id=447350763363237888&scope=bot&permissions=-1')">Invite</button>
 </center>
 <hr>
 <hr>
